@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Abishekdakshna Rethinasamy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Scroll animation for skills */
+        .skills-wrapper {
+            display: flex;
+            overflow: hidden;
+            position: relative;
+            width: 100%; /* Ensure it takes up full width */
+        }
+
+        .skills-container {
+            display: flex;
+            animation: scrollRightLeft 20s linear infinite; /* Increased the duration to 20s for slower speed */
+        }
+
+        .skill-item {
+            width: 120px;  /* Increased width for better visibility */
+            height: 120px; /* Increased height */
+            margin-right: 40px; /* Increased space between skills */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @keyframes scrollRightLeft {
+            0% {
+                transform: translateX(100%); /* Start off the screen from the right */
+            }
+            100% {
+                transform: translateX(-100%); /* Scroll to the left completely */
+            }
+        }
+
+        /* Adjust the images to fit the skills section */
+        .skill-item img {
+            width: 70px; /* Increased size */
+            height: 70px; /* Increased size */
+            object-fit: contain; /* Ensures image retains aspect ratio */
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-900">
+    
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md py-4">
+        <div class="container mx-auto flex justify-between items-center px-6">
+            <h1 class="text-2xl font-bold">Abishekdakshna R</h1>
+            <ul class="flex space-x-6">
+                <li><a href="#home" class="hover:text-blue-500">Home</a></li>
+                <li><a href="#about" class="hover:text-blue-500">About</a></li>
+                <li><a href="#resume" class="hover:text-blue-500">Resume</a></li>
+                <li><a href="#education" class="hover:text-blue-500">Education</a></li>
+                <li><a href="#certifications" class="hover:text-blue-500">Certifications</a></li>
+                <li><a href="#projects" class="hover:text-blue-500">Projects</a></li>
+                <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="h-screen flex items-center justify-between px-10">
+        <div class="w-1/2">
+            <h2 class="text-5xl font-bold">Hi, I'm Abishekdakshna.R</h2>
+            <p class="mt-4 text-lg">M.Tech Artificial Intelligence & Data Science</p>
+            <div class="text-lg font-semibold text-blue-500 mt-4" id="roles-container"></div>
+            <a href="#projects" class="mt-6 inline-block bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600">View My Work</a>
+        </div>
+        <div class="w-1/2 flex justify-end">
+            <img src="pictures/Abishekdakshna.jpg" alt="Abishekdakshna" class="w-full max-w-md rounded-lg shadow-lg">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-200 text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold">About Me</h2>
+            <p class="mt-4 text-lg">Analytical data analyst skilled in SQL, Python, Power BI, machine learning, and data visualization tools. Seeking to apply strong statistical knowledge, data interpretation skills, and machine learning techniques to drive informed decision-making and enhance business performance in a dynamic environment.</p>
+            
+            <!-- Skills Section -->
+            <div class="mt-10">
+                <div class="skills-wrapper">
+                    <div class="skills-container">
+                        <!-- SQL -->
+                        <div class="skill-item">
+                            <img src="skills/sql.png" alt="SQL">
+                        </div>
+                        <!-- Python (Pandas, NumPy, Matplotlib, Seaborn) -->
+                        <div class="skill-item">
+                            <img src="skills/python.jpeg" alt="Python">
+                        </div>
+                        <div class="skill-item">
+                            <img src="skills/Pandas.png" alt="Pandas">
+                        </div>
+                        <div class="skill-item">
+                            <img src="skills/NumPy.png" alt="NumPy">
+                        </div>
+                        <div class="skill-item">
+                            <img src="skills/Seaborn.png" alt="Seaborn">
+                        </div>
+                        <!-- Machine Learning (Scikit-learn, TensorFlow) -->
+                        <div class="skill-item">
+                            <img src="skills/Machine Learning.png" alt="Machine Learning">
+                        </div>
+                        <div class="skill-item">
+                            <img src="skills/Scikit-learn.png" alt="Scikit-learn">
+                        </div>
+                        <div class="skill-item">
+                            <img src="skills/TensorFlow.jpeg" alt="TensorFlow">
+                        </div>
+                        <!-- Data Visualization (Power BI, Tableau, Matplotlib) -->
+                        <div class="skill-item">
+                            <img src="skills/Power BI.png" alt="Power BI">
+                        </div>
+                        <div class="skill-item">
+                            <img src="skills/tableau.png" alt="Tableau">
+                        </div>
+                        <div class="skill-item">
+                            <img src="skills/Matplotlib.png" alt="Matplotlib">
+                        </div>
+                        <!-- Microsoft Excel -->
+                        <div class="skill-item">
+                            <img src="skills/Excel.png" alt="Microsoft Excel">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="py-20 bg-white text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold">Resume</h2>
+            <p class="mt-4 text-lg">I have developed a strong foundation of technical and analytical skills through my academic coursework and hands-on project work, where I tackled real-world challenges and gained valuable experience. I am now excited to apply these skills in a professional setting, where I can contribute to innovative solutions and continue to grow in my field.</p>
+            <div class="mt-6">
+                <a href="Documents/Abishekdakshna_MTech.pdf" class="inline-block bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600" download>Download My Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+    
+        h1, h2, h3 {
+            color: #333;
+        }
+    
+        /* Experience Section */
+        #experience {
+            margin: 50px 0;
+            padding: 40px 20px 20px 20px; /* Added padding-top to create space */
+        }
+    
+        .experience-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .experience-item {
+            width: 80%;
+            max-width: 900px;
+            margin: 20px 0;
+            display: flex;
+            flex-direction: column;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            align-items: center; /* Center content */
+        }
+    
+        .experience-content {
+            width: 100%;
+            max-width: 800px;
+            text-align: center; /* Center text */
+        }
+    
+        .experience-item h3 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+        }
+    
+        .position {
+            font-size: 1.1rem;
+            color: #555;
+            margin: 5px 0;
+        }
+    
+        .time-period {
+            font-size: 1rem;
+            color: #777;
+            margin-bottom: 10px;
+        }
+    
+        .description {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #333;
+            margin-top: 10px;
+        }
+    
+        /* Highlighted words */
+        .highlight {
+            font-weight: bold;
+            color: #007BFF;
+        }
+    
+        .section-header {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #333;
+        }
+    
+        .experience-intro {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 40px;
+        }
+    
+        /* Technology used */
+        .technology-used {
+            margin-top: 20px;
+            text-align: center;
+        }
+    
+        .technology-used h4 {
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+    
+        .technology-used img {
+            width: 60px;
+            height: 60px;
+            margin: 10px;
+        }
+    
+        /* Ensure that images are centered and in a row */
+        .technology-used-row {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    </style>
+    
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-white text-center">
+        <div class="container mx-auto px-6">
+            <!-- Section Header -->
+            <h2 class="text-3xl font-bold">Experience</h2>
+            
+            <!-- Section Paragraph -->
+            <p class="mt-4 text-lg">
+                I have gained valuable experience through my internships, working on various data science and analytics projects. These opportunities have allowed me to enhance my skills in data processing, predictive modeling, and strategic decision-making, which I look forward to applying in a professional setting.
+            </p>
+    
+            <div class="mt-6">
+                <div class="experience-container">
+                    <!-- Experience 1: Coratia Technology -->
+                    <div class="experience-item">
+                        <div class="experience-content">
+                            <h3>Coratia Technology</h3>
+                            <p class="position">Data Science Intern</p>
+                            <p class="time-period">Jun 2024 - Jul 2024</p>
+                            <p class="description">
+                                Machine failure prediction project where I developed a machine learning model to analyze sensor data. The goal was to predict
+                                failures in advance, enabling proactive maintenance and reducing downtime.
+                            </p>
+    
+                            <!-- Technology Used -->
+                            <div class="technology-used">
+                                <h4>Technology used:</h4>
+                                <div class="technology-used-row">
+                                    <img src="Intern/Jupyter.png" alt="Jupyter">
+                                    <img src="Intern/python.jpeg" alt="Python">
+                                    <img src="Intern/Machine Learning.png" alt="Machine Learning">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Experience 2: CodeAlpha -->
+                    <div class="experience-item">
+                        <div class="experience-content">
+                            <h3>CodeAlpha</h3>
+                            <p class="position">Data Science Intern</p>
+                            <p class="time-period">Apr 2024 - Jun 2024</p>
+                            <p class="description">
+                                <span class="highlight">Prediction with LSTM:</span> Used Jupyter notebooks to implement LSTM models for forecasting stock prices, gaining insights into time series analysis and predictive modeling.
+                                <br><span class="highlight">Modeling with Linear Regression:</span> Developed robust Linear Regression models to predict outcomes based on diverse datasets, refining my data preprocessing and model evaluation skills.
+                                <br><span class="highlight">A/B Testing Analysis:</span> Led A/B testing initiatives to evaluate the effectiveness of interventions, applying statistical techniques to derive actionable insights for strategic decision-making.
+                            </p>
+    
+                            <!-- Technology Used -->
+                            <div class="technology-used">
+                                <h4>Technology used:</h4>
+                                <div class="technology-used-row">
+                                    <img src="Intern/Deep learning.jpeg" alt="Deep Learning">
+                                    <img src="Intern/LSTM.png" alt="LSTM">
+                                    <img src="Intern/Machine Learning.png" alt="Machine Learning">
+                                    <img src="Intern/Linear regression.png" alt="Linear Regression">
+                                    <img src="Intern/User Experience.jpeg" alt="User Experience">
+                                    <img src="Intern/python.jpeg" alt="Python">
+                                    <img src="Intern/Jupyter.png" alt="Jupyter">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Experience 3: Omega Healthcare -->
+                    <div class="experience-item">
+                        <div class="experience-content">
+                            <h3>Omega Healthcare</h3>
+                            <p class="position">PowerBI Manager (Trainee)</p>
+                            <p class="time-period">Dec 2023 - Mar 2024</p>
+                            <p class="description">
+                                I created a Power BI dashboard to help clients compare employee benefit packages, transforming and processing their data using DAX and Excel to ensure completeness and validity. I provided technical insights on utilizing their data more effectively through various technologies. Additionally, I consulted with the client to identify the most relevant metrics for the final product display.
+                            </p>
+    
+                            <!-- Technology Used -->
+                            <div class="technology-used">
+                                <h4>Technology used:</h4>
+                                <div class="technology-used-row">
+                                    <img src="Intern/PowerBI.png" alt="PowerBI">
+                                    <img src="Intern/python.jpeg" alt="Python">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+            
+        
+    <!-- Education Section -->
+    <section id="education" class="py-20 bg-gray-200 text-center relative" style="background-color: #f7fafc;">
+        <div class="container mx-auto px-6 bg-white bg-opacity-80 p-10 rounded-lg shadow-md">
+            <h2 class="text-3xl font-bold">Education</h2>
+            <p class="mt-4 text-lg">My academic background in AI and Data Science.</p>
+            <div class="mt-6 text-left max-w-3xl mx-auto">
+                <div class="bg-white p-6 rounded-lg shadow-md mb-4">
+                    <h3 class="text-xl font-semibold">M.Tech in Artificial Intelligence & Data Science</h3>
+                    <p class="mt-2">Sastra Deemed University, Thanjavur | 2023 - 2025</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold">B.Tech in Computer Science</h3>
+                    <p class="mt-2">MAM College of Engineering | 2018 - 2022</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="py-20 bg-gray-100 text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold">Certifications</h2>
+            <p class="mt-4 text-lg">Certifications that showcase my skills in Data Science and AI.</p>
+            <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-3xl mx-auto">
+                <div class="certification-card">
+                    <img src="pictures/Python.png" alt="Learn Python: The Complete Python Programming Course">
+                    <div class="certification-title">Learn Python: The Complete Python Programming Course</div>
+                </div>
+                <div class="certification-card">
+                    <img src="pictures/PyTorch.png" alt="Deep Learning with PyTorch for Medical Image Analysis">
+                    <div class="certification-title">Deep Learning with PyTorch for Medical Image Analysis</div>
+                </div>
+                <div class="certification-card">
+                    <img src="pictures/Excel.jpeg" alt="Microsoft Excel: Beginner to Advance in Animation + AI">
+                    <div class="certification-title">Microsoft Excel: Beginner to Advance in Animation + AI</div>
+                </div>
+                <div class="certification-card">
+                    <img src="pictures/PowerBI.png" alt="Data Visualization with PowerBI Simplified">
+                    <div class="certification-title">Data Visualization with PowerBI Simplified</div>
+                </div>
+                <div class="certification-card">
+                    <img src="pictures/Artificail Intelligence.jpeg" alt="Artificial Intelligence A-Z 2025: Build 7 AI + LLM & ChatGPT">
+                    <div class="certification-title">Artificial Intelligence A-Z 2025: Build 7 AI + LLM & ChatGPT</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-100 text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold">Projects</h2>
+            <p class="mt-4 text-lg">Check out some of my work and projects in Data Science and Artificail Intelligence.</p>
+
+            <!-- Grid Layout for Projects -->
+            <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Project 1 -->
+                <div class="relative group overflow-hidden rounded-lg shadow-lg">
+                    <img src="Projects Pic/Stock market.jpeg" alt="Stock Price Prediction with LSTM" class="w-full h-64 object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <a href="https://github.com/Abishekdakshna/CodeAlpha_Stock_Price_Prediction_With_LSTM" target="_blank" class="text-white font-bold text-xl">Stock Price Prediction with LSTM </a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="relative group overflow-hidden rounded-lg shadow-lg">
+                    <img src="Projects Pic/Amazon.png" alt="Amazon Retail Sales Analysis Dashboard (Excel)" class="w-full h-64 object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <a href="https://github.com/Abishekdakshna/Amazon_Retail_Sales_Analysis_Dashboard" target="_blank" class="text-white font-bold text-xl">Amazon Retail Sales Analysis Dashboard (Excel) </a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="relative group overflow-hidden rounded-lg shadow-lg">
+                    <img src="Projects Pic/Time series.png" alt="Time Series Forecasting with ARIMA" class="w-full h-64 object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <a href="https://github.com/Abishekdakshna/Time_Series_Forecasting_with_ARIMA" target="_blank" class="text-white font-bold text-xl">Time Series Forecasting with ARIMA </a>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div class="relative group overflow-hidden rounded-lg shadow-lg">
+                    <img src="Projects Pic/Magnificient.png" alt="Magnificent Seven (Power BI)" class="w-full h-64 object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <a href="https://github.com/Abishekdakshna/Magnificient_Seven" target="_blank" class="text-white font-bold text-xl">Magnificent Seven (Power BI) </a>
+                    </div>
+                </div>
+                <!-- Project 5 -->
+                <div class="relative group overflow-hidden rounded-lg shadow-lg">
+                    <img src="Projects Pic/election-campaign.jpg" alt="Elections Ad Spending Analysis with Python" class="w-full h-64 object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <a href="https://github.com/Abishekdakshna/Elections_Ad_Spending_Analysis_with_Python" target="_blank" class="text-white font-bold text-xl">Elections Ad Spending Analysis with Python </a>
+                    </div>
+                </div>
+                <!-- Project 6 -->
+                <div class="relative group overflow-hidden rounded-lg shadow-lg">
+                    <img src="Projects Pic/Alzheimer Disease.jpeg" alt="Alzheimer Disease Detection using CNNs" class="w-full h-64 object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <a href="https://github.com/Abishekdakshna/Alzheimer_Disease_Detection_using_CNNs" target="_blank" class="text-white font-bold text-xl">Alzheimer Disease Detection using CNNs </a>
+                    </div>
+                </div>
+                <!-- Project 7 -->
+                <div class="relative group overflow-hidden rounded-lg shadow-lg">
+                    <img src="Projects Pic/Electric Vehicles.png" alt="Electric Vehicles Market Size Analysis" class="w-full h-64 object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <a href="https://github.com/Abishekdakshna/Electric_Vehicles_Market_Size_Analysis" target="_blank" class="text-white font-bold text-xl">Electric Vehicles Market Size Analysis </a>
+                    </div>
+                </div>
+                <!-- Project 8 -->
+                <div class="relative group overflow-hidden rounded-lg shadow-lg">
+                    <img src="Projects Pic/Delhi Network.jpeg" alt="Delhi Metro Network Analysis" class="w-full h-64 object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <a href="https://github.com/Abishekdakshna/Delhi_Metro_Network_Analysis-" target="_blank" class="text-white font-bold text-xl">Delhi Metro Network Analysis </a>
+                    </div>
+                </div>
+                <!-- Project 9 -->
+                <div class="relative group overflow-hidden rounded-lg shadow-lg">
+                    <img src="Projects Pic/Rainfall Trend.jpeg" alt="Rainfall Trend Analysis" class="w-full h-64 object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <a href="https://github.com/Abishekdakshna/Rainfall-trend-analysis" target="_blank" class="text-white font-bold text-xl">Rainfall Trend Analysis </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold">Contact</h2>
+            <p class="mt-4 text-lg">Feel free to reach out to me.</p>
+            <div class="mt-6 text-left max-w-3xl mx-auto">
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md mb-4 text-center">
+                    <h3 class="text-xl font-semibold">📞 Contact Information</h3>
+                    <div class="flex justify-center space-x-8 mt-4">
+                        <a href="mailto:abishekdakshna29@gmail.com" class="text-blue-500 hover:underline">📧 Email</a>
+                        <a href="https://github.com/Abishekdakshna" class="text-blue-500 hover:underline">🐙 GitHub</a>
+                        <a href="https://www.linkedin.com/in/abishekdakshna-r" class="text-blue-500 hover:underline">🔗 LinkedIn</a>
+                    </div>
+                    <p class="mt-4"><strong>📱 Phone:</strong> +91 8940189758</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center py-4">
+        <p>&copy; 2025 Abishekdakshna | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        // Define the roles
+        const roles = [
+            "Data Analyst",
+            "Business Analyst",
+            "Data Scientist",
+            "Machine Learning Engineer"
+        ];
+
+        // Update the "roles-container" with roles dynamically
+        let index = 0;
+        setInterval(() => {
+            document.getElementById("roles-container").innerText = roles[index];
+            index = (index + 1) % roles.length;
+        }, 2000);
+    </script>
+
+</body>
+</html>
+

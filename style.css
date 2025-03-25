@@ -1,0 +1,118 @@
+#home {
+  background-color: #d4c5b6; /* Adjust this color to match your image background */
+}
+#home {
+  background: linear-gradient(to right, #d4c5b6, #e0d6c8); /* Adjust these colors */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+h1, h2, h3 {
+  color: #333;
+}
+
+/* Experience Section */
+#experience {
+  margin: 50px 0;
+  padding: 40px 20px 20px 20px; /* Added padding-top to create space */
+}
+
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.experience-item {
+  width: 80%;
+  max-width: 900px;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  align-items: center; /* Center content */
+}
+
+.experience-content {
+  width: 100%;
+  max-width: 800px;
+  text-align: center; /* Center text */
+}
+
+.experience-item h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.position {
+  font-size: 1.1rem;
+  color: #555;
+  margin: 5px 0;
+}
+
+.time-period {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  margin-top: 10px;
+}
+
+/* Highlighted words */
+.highlight {
+  font-weight: bold;
+  color: #007BFF;
+}
+
+.section-header {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.experience-intro {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+/* Technology used */
+.technology-used {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.technology-used h4 {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.technology-used img {
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+}
+
+/* Ensure that images are centered and in a row */
+.technology-used-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
